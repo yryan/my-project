@@ -4,6 +4,10 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin-left: 25px;
+    /*
+    background-image: url("../img/cherry.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;*/
 }
 h1, h2, h3 { 
 	margin: 0;
@@ -35,7 +39,7 @@ address {
 	font-size: 18px;
 }
 .container h2 {
-	color: #000;
+	color: #006;
 	font-size: 36px;
 	margin: 54px 0;
 }
@@ -82,22 +86,29 @@ ul.navbar {
 
 /*Introduction banner box */
 
-.banner {
+#banner {
+	background-image: url("../img/Mt.fuji2.jpg");
  	background-color: #009ddc;
-	padding: 20px 40px;
-	
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	padding: 5%;
+}
+.bannerwrapper {
+	padding: 5%;
 }
 
-.banner h1 {
+
+.bannerwrapper h1 {
 	font-size: 64px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #fff;
+	color: #cc0066;
 }
-.banner p {
-	font-size: 22px;
-	color: white;
-	font-weight: 300;
+ .bannerword p {
+	font-size: 25px;
+	color: #006;
+	font-weight: 400;
+	text-align: center;
 
 }
 
@@ -130,7 +141,14 @@ ul li .about-content .post-container {
 	margin-bottom: 10px;
 	
 }
-.sight-content .image-container img{
+.gallary{
+	float: left;
+	width: 25%;
+	margin-right: 5px;
+
+}
+.gallary img { width: 100%; margin-bottom: 10px; height: 187px; }
+/*.sight-content .image-container img{
 	width: 300px;
 	height: 200px;
 	display: inline;
@@ -183,12 +201,12 @@ transition: color 12s, font-size 12s;
 @media (max-width: 720px) {
 	.banner h1 {
 		font-size: 32px;
-		transition: font 3s ease;
+		/*transition: font 3s ease;*/
 	}
 }
 @media (min-width: 960px) {
 	.banner h1 {
 		font-size: 60px;
-		transition: font 5s ease;
+		/*transition: font 5s ease;*/
 	}
 }
