@@ -5,18 +5,26 @@
 	<meta name="viewport" content="widthe=device-width, initial-scale=1">
 	<title>Introduction of Japan</title>
 	<link rel="stylesheet" href="css/styles.css">
+	
 </head>
-<body>
+<body id="home">
+	<a href="javascript:void(0);" onclick="window.history.back();">Go Back:Function</a>
+	
 	<div class="main-content">
 		
 		<div id="nav" class="clear">
+			<div class="logo">
+				<a href="index.html">
+				<img src="img/logo.jpg" alt="Yoko's logo">
+			</div>
+
 			<!--<div class="logo"><img src="img/logo-company.png" alt="Web Development Logo"></div>-->
 			<div class="nav-list"><!--navigation-->
-				<ul class="navbar">
-					<!--<li><a href="#banner">About</a></li>-->
-					<li><a href="#about">About</a></li>
+				<ul id= "navbarUL" class="navbar">
+					<li><a href="#about">About Japan</a></li>
 					<li><a href="#sight">Sight Seeing</a></li>
 					<li><a href="#contact">Contact</a></li>
+
 				</ul>
 			</div><!--end of navigation-->
 		</div>
@@ -37,68 +45,77 @@
 				
 					<h2>About Japan</h2>
 
-					<div class="about-content clear">
-						<div class="image-container">
-							<h3>Information on Japan</h3><br>
-							<a href="Japanrev.html"><img src="img/Japan-mapcrop.jpg" alt="Japan-map"></a>
-						</div>
-
-						<div class="image-container">
-							<h3>History of Japan</h3><br>
-							<a href="Japanrev.html"><img src="img/battlehistory.jpg" alt="Japan-map"></a>
-						</div>
-				
-						<div class="image-container">
-							<h3>Future of Japan</h3><br>
-							<a href="Japanrev.html"><img src="img/sunrise4.jpg" alt="Japan-map"></a>
-						</div>
+				<div class="about-content clear">
+					<div class="image-container">
+						<h3>Information on Japan</h3><br>
+						<a href="Japan.html"><img src="img/Japan-mapcrop.jpg" alt="Japan-map"></a>
 					</div>
 
+					<div class="image-container">
+						<h3>History of Japan</h3><br>
+						<a href="japanhistory/lightbox.html"><img src="img/battlehistory.jpg" alt="Japan-map"></a>
+					</div>
+				
+					<div class="image-container">
+						<h3>Future of Japan</h3><br>
+						<a href="Japan.html"><img src="img/sunrise4.jpg" alt="Japan-map"></a>
+					</div>
 
-		<div id="sight" class="sightimages">
-			<h2>Sight Seeing</h2>
-			<div class="sightbox">
-				<h3> We will show you beautiful places to visit</h3>
+					<!--<div class="post-container">
+						<ul>
+						<li><a href="Japan.html">About Japan</a></li>
+						<li><a href="land.html">Japanese Geography</a></li>
+						<li><a href="history.html">Japanese History</a></li>
+						<li><a href="future.html">Modern Japan</a></li>
+						</ul>
+					</div>-->
+				</div>
 			</div>
 
-			<div class="gallarycontainer clear">
+
+
+
+		<div id="sight" class="sightimages clear">
+			<h2>Sight Seeing</h2>
+			<div class="sightbox">
+				<h3> We will show you beautiful places to visit - Please click the pictures for more information</h3>
+			</div>
+
+			<div class="gallarycontainer" class="clear">
 				<div class="gallary">
-					<a href="https://www.japan-guide.com/e/e2164.html"><img src="img/Tokyo.jpg" alt="Tokyo">
+					<a href="https://www.japan-guide.com/e/e2164.html" target="_blank"><img src="img/Tokyo.jpg" alt="Tokyo"></a>
 					<p>Tokyo - Capital of Japan</p>
-					</a>
 				</div>
 				<div class="gallary">		
-					<a href="https://www.japan-guide.com/e/e2158.html"><img src="img/Kinkakuji.jpeg" alt="Kinkakuji">
+					<a href="https://www.japan-guide.com/e/e2158.html" target="-_blank"><img src="img/Kinkakuji.jpeg" alt="Kinkakuji"></a></img>
 					<p> Kyoto-Ancient Capital</p>
-					</a>
 				</div>
 				<div class="gallary">		
-					<img src="img/Miajima.jpeg" alt="Miyajima">
-					<p> North-East Japan: Tori (Shrine gate in the sea</p>
+					<a href="https://www.tripadvisor.com/Attraction_Review-g1022438-d320235-Reviews-Itsukushima_Shrine-Hatsukaichi_Hiroshima_Prefecture_Chugoku.html" target="=_blank"><img src="img/Miajima.jpeg" alt="Miyajima"></a></img>
+					<p> Tori - Shrine gate in the sea</p>
 				</div>
 				<div class="gallary">		
-					<img src="img/noodleshop.jpg" alt="noodleshop">
-					<p> Food Tour </p>
+					<a href="https://www.youtube.com/watch?v=hJht8LYvHwk" target="_blank"><img src="img/noodleshop.jpg" alt="Ryokan">
+					<p> Japanese Ryokan food </p>
 				</div>
 				<div class="gallary">		
-					<img src="img/J-castle.jpg" alt="Japanese Castle">
-					<p>Japanese traditional castle</p>
+					<a href="https://www.viator.com/Kyoto-attractions/Himeji-Castle/d332-a200?mcid=33953&tsem=true&supci=-1786410884&supag=2490079583&supsc=kwd-77584318009956:aud-806379951:loc-190&supai=77584364623565&supdv=c&supnt=o&supkw=Himeji%20castle&supti=kwd-77584318009956:aud-806379951:loc-190&suplp=59981&supli=96&msclkid=344426af93d6183ba9ee7a1c3293a0c6"target="-_blank"><img src="img/J-castle.jpg" alt="Japanese Castle"></a></img>
+					<p>Japanese castle - himeji Castle </p>
 				</div>	
 				<div class="gallary">		
-					<img src="img/Toshogu.jpeg" alt="Fall and temple">
-					<p> Nikko - Shogun Ieyasu's shrine at Nikko</p>
+					<a href="http://www.kasugataisha.or.jp/about/index_en.html" target="_blank"><img src="img/Toshogu.jpeg" alt="Fall and temple"></a></img>
+					<p> Old shrine - Kasuga Shrine</p>
 				</div>
 				<div class="gallary">		
-					<img src="img/imperial.jpeg" alt="Boshuu">				
-					<p> Great Pacific Ocran cities</p>
+					<a href="https://www.japan-guide.com/e/e2160.html" target="_blank"><img src="img/Hiroshima.jpg" alt="Atomic Bomb sightimages"></a></img>				
+					<p> Hiroshima Peace Memorial</p>
 				</div>
 				<div class="gallary">	
-					<img src="img/onsen.jpeg" alt="Natural hot-spring">	
-					<p>Relaxing Natural Hot Spring Tour</p>		
+					<a href="https://japandeluxetours.com/experiences/attraction-japanese-hot-springs" target="_blank"><img src="img/onsen.jpeg" alt="Natural hot-spring">	
+					<p>Relaxing Natural Hot Spring</p>		
 				</div>
 				<div class="gallary">	
-					<img src="img/temp.jpg" alt="Natural hot-spring">	
-					<p>Japanese Buddism Tower</p>		
+					<a href="https://www.visitokinawa.jp" target="_blank"><img src="img/okinawasmall.jpg" alt="Okinawa">	<p>Tropical Country Okinawa</p>		
 				</div>
 			</div> 
 		</div>
@@ -109,12 +126,15 @@
 			<a href="mailto:someone@example.com?Subject=Web%20Development">someone@example.com</a><br>
 			<a href="tel:1-555-123-4567">+1-555-123-4567</a>
 		</div>
+		
+
+
 
 	</div>
 	
-<!--	<footer class="footer">
+<!--<footer class="footer">
 		<a href="table-2.html">Table 2</a> | <a href="float.html">Float</a> | <a href="embed.html">Embed</a>
 	</footer>-->
-	
+	<!--<script type="text/javascript" src="js/main.js" ></script>	-->
 </body>
 </html>
