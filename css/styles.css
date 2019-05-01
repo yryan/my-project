@@ -30,14 +30,31 @@ a {
 address {
 	font-style: normal;
 }
-.clear {
-	overflow: auto;
+
+.clear, .clearfix {
+  overflow: auto;
+}
+.clear::after,
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
 }
 
 .container p {
 	color: #000;
 	font-size: 18px;
 }
+.container p#caption {
+	color: #fff;
+}
+
 .container h2 {
 	color: #006;
 	font-size: 36px;
@@ -65,11 +82,13 @@ address {
 }
 #nav .logo { 
 	float: left; 
+	margin-left: 5%;
 }
 #nav .nav-list { 
 	float: right;
 	font-weight: bold;
 	font-size: 16px;
+	margin-right: 50px;
 }
 #nav .nav-list a { 
 	color: #373a3c;
@@ -147,6 +166,7 @@ ul.navbar {
 	padding-bottom: 25px;
 	margin-bottom: 20px;
 }
+
 /*	float: left;
 	width: 30%;
 	margin-right: 5%;*/
@@ -164,8 +184,18 @@ ul.navbar {
 	margin: 15px;
 	
 }
+.image-container2{
+	width:25%;
+	float: left;
+	margin-right: 10px;
+}
 .image-container img {
 	width: 100%;
+}
+.image-container3{
+	width:35%;
+	float:left;
+	margin 0;
 }
 .image-container p{
 	float: left;

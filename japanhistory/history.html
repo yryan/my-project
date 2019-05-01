@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="widthe=device-width, initial-scale=1">
+  <title>History of Japan</title>
+<link rel="stylesheet" type="text/css" href="../css/history.css">
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+
+<h1 style="text-align:center">History of Japan</h1>
+
+<div class="container">
+
+  <div id="nav" class="clear">
+      <div class="logo">
+        <a href="../index.html">
+        <img src="img/logo.jpg" alt="Yoko's logo">
+      </div>
+
+      <div class="nav-list"><!--navigation-->
+          <ul id= "navbarUL" class="navbar">
+            <li><a href="../Japan.html">About Japan</a></li>
+            <li><a href="JPNfuture.html">Future of Japan</a></li>
+            <li><a href="../index.html#sight">Sight Seeing</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+      </div><!--end of nav-list-->
+    </div><!---->
+
+    <div class="mySlides">
+      <div class="numbertext">1/6</div>
+      <img src="img/shotoku.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2/6</div>
+      <img src="img/sengoku.jpg">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">3/6</div>
+      <img src= "img/edojidai.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4/6</div>
+      <img src="img/Perryrev.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5/6</div>
+      <img src="img/hiroshima1.jpg">
+    </div>
+      <div class="mySlides">
+      <div class="numbertext">6/6</div>
+      <img src="img/olympic.jpg">
+    </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img/shotoku.jpg" onclick="currentSlide(1)" alt="Ancient - 800 AD:  The Japan has traced to prehistoric times. Between 300 to 800, Japan's many kingdoms and tribes gradually came to be unified under a centralized government by the Emperors. In 794, a new imperial capital was established at Heian-kyo: present Kyoto.  Around 600, Prince Shotoku imported culture from China and established Buddhism and beginning of Japanese culture ."></a>
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="img/sengoku.jpg" onclick="currentSlide(2)" alt="800 - 1600 AD.Battle-Period:  The War lords, Minamoto, Oda, Toyotomi and Tokugawa Lords fought to unite Japan and finally Ieyasu Tokugawa established the control over Japan.">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src= "img/edojidai.jpg" onclick="currentSlide(3)" alt="1600 - 1868 Edo Period: The Tokugawa shogunate governed from Edo - present Tokyo, presided over a prosperous and peaceful Edo era during which Commerce, Art and other Japanese culture prospered.  The Tokugawa shogunate closed the country from foreign countries.">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="img/Perryrev.jpg" onclick="currentSlide(4)" alt="1868 - 1912 Meiji,  American Commodore Perry visited Japan and demanded Japan to open the country to the outside world.  Eventually Japan had to establish the diplomacy with the U.S. and ended isolation.  Tokugawa clan resisted opening and Emperor's side.">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/hiroshima1.jpg" onclick="currentSlide(5)" alt="1912 - 1945 Taisho and Showa Periods:  Japan strived to catch up the western culture and technology.  Japan established powerful military and joined the advanced western countries in a very short time.  Japan had a conflict with China and Allies and entered into World War II.  August 1945 the U.S. dropped two atomic bombs on Hiroshima and Nagasaki.  World War II ended. ">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="img/olympic.jpg" onclick="currentSlide(6)" alt="1945- present:  After the war, Japan abandoned their military power except own defense force.  Japan became one of the world economic powerhouses.  2020 Olympic Games will be held in Japan. )">
+      </div> 
+    
+    </div><!--end of "row"-->
+  
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="../lightbox/js/lightbox.min.js"></script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

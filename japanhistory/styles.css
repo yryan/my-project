@@ -1,0 +1,111 @@
+/* external CSS Style */
+body {
+	background-color: #fff;
+	margin: 0;
+}
+div {
+	margin: 10px 20px;
+	padding: 10px 20px;
+	border: 2px solid red;
+}
+h1 {
+	color: #D97904;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+h2 {
+	color: #BF4904;
+	margin: 0;
+}
+p {
+	color: #D97904;
+}
+img {
+	display: block;
+	width: 100%;
+	border: 0;
+}
+hr {
+	border-color: #fff;
+	width: 50%;
+	margin: 10px auto;
+}
+
+/* Style for classname legs */
+.legs h2 {
+	color: #B9BF04;
+}
+
+/* Font Family for Arms page
+===========================
+font-family: 'Playfair Display', serif;
+font-family: 'News Cycle', sans-serif;
+font-family: 'Dosis', sans-serif;
+*/
+
+#foot h1{
+		background-color: yellow;
+}
+.commons h1{
+		background-color: blue;
+}
+
+.content h1 {
+	font-family: 'Playfair Display', serif;
+	color: #2E4B72;
+	margin: 0;
+}
+.content h2 {
+	font-family: 'News Cycle', sans-serif;
+	color: #8CCBE5;
+}
+.content p {
+	font-family: Arial, sans-serif;
+	color: #26221A;
+	font-size: 12px;
+}
+.content a {
+	text-decoration: none;
+	color: #DB5134;
+}
+.content img {
+	width: 50%;
+}
+.content ul.style-list {
+	display: block;
+	list-style-type: decimal;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+}
+.content .back {
+	text-align: center;
+	color: #6F7372;
+	display: block;
+}
+
+table#human {
+	border:1px solid gray; 
+	border-collapse:collapse; 
+	font-size:100%; 
+	margin:0 0 .5em 1em;
+}
+table#human thead th {
+	background:Lightgrey; 
+	text-align:center;
+	text-transform: capitalize;
+}
+/* Style for classname footer */
+.footer {
+	background-color: #444;
+	text-align: center;
+	padding: 50px;
+	margin: 0;
+	border-width: 5px 0 0 0;
+	border-top-color: green;
+}
+.footer p {
+	color: #fff;
+}

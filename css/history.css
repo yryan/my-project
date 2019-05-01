@@ -1,0 +1,146 @@
+<style>
+body {
+  font-family: Arial;
+  margin: 30px 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#nav {
+  display: block;
+  position: relative;
+  margin-bottom: 40px; 
+  color: #373a3c;
+}
+#nav .logo { 
+  float: left; 
+  margin-left: 5%;
+}
+#nav .nav-list { 
+  float: right;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 50px;
+}
+#nav .nav-list a { 
+  color: #373a3c;
+}
+ul.navbar {
+  display: block;
+  text-align: right;
+  margin: 15% 0 0 0;
+}
+.navbar li {
+  font-size: 16px;
+  display: inline;
+  margin-right: 55px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin: 10% 10%;
+  width: 80%;
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+   width: 100%;
+
+}
+.row {width: 100%;}
+
+.column {margin-left: 5px;
+        margin-right: 5px;
+          margin-bottom: 15px;
+          margin-top: 15px;
+          columns: 40%;
+
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+  right: 40%
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  margin-right: 100px: 
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 15px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: red;
+  width:100%;
+  }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>

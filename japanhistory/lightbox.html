@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Future of Japan</title>
+  <link href="../lightbox/css/lightbox.css" rel="stylesheet" type="text/css">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="main-content container">
+    <h1>Future of Japan</h1>
+    <div class="clear" id="nav">
+      <div class="logo">
+        <a href="index.html"><img alt="Yoko's logo" src="../img/logo.jpg"></a>
+      </div><!--<div class="logo"><img src="img/logo-company.png" alt="Web Development Logo"></div>-->
+      <div class="nav-list">
+        <!--navigation-->
+        <ul class="navbar" id="navbarUL">
+          <li>
+            <a href="../Japan.html">About Japan</a>
+          </li>
+          <li>
+            <a href="history.html">History of Japan</a>
+          </li>
+          <li>
+            <a href="JPNfuture.html">Future of Japan</a>
+          </li>
+          <li>
+            <a href="index.html#sight">Sight Seeing</a>
+          </li>
+          <li>
+            <a href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div><!--end of navigation-->
+    </div><!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img class="hover-shadow" onclick="openModal();currentSlide(1)" src="img/tsunami2.jpg">
+        <p>Japan is a small country and has been affected by frequent earthquakes and typhoons, One of the largest earthquake and tsunami in 2011 killed 15,896 people insured 6,157 in North Eastern Japan.0</p>
+      </div>
+      <div class="column">
+        <img class="hover-shadow" onclick="openModal();currentSlide(3)" src="img/japansenior.jpg">
+        <p>Japan is experiencing a “super-aging” society. People aged 65 and older in Japan make up a quarter of its total population, estimated to reach a third by 2050</p>
+      </div>
+      <div class="column">
+        <img class="hover-shadow" onclick="openModal();currentSlide(4)" src="img/modernJPN.jpg">
+        <p>Japan is a peaceful country and will strive to contribute to the world peace.</p>
+      </div><!-- The Modal/Lightbox -->
+      <div class="modal" id="myModal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+          <div class="numbertext">
+            1 / 6
+          </div><img src="img/tsunami2.jpg" style="width:100%"></div>
+          <div class="mySlides">
+          <div class="numbertext">
+            2 / 6
+          </div><img src="img/japansenior.jpg" style="width:100%"></div>
+          <div class="mySlides">
+          <div class="numbertext">
+            3 / 6
+          </div><img src="img/modernJPN.jpg" style="width:100%"></div>
+        </div><!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div><!-- Thumbnail image controls -->
+        <div class="column"><img alt=" " class="demo" onclick="currentSlide(1)" src="img/tsunam2.jpg"></div>
+        <div class="column"><img alt="" class="demo" onclick="currentSlide(2)" src="img/japansenior.jpg"></div>
+        <div class="column"><img alt="" class="demo" onclick="currentSlide(3)" src="img/modernJPN.jpg"></div>
+      </div>
+      <script>
+      // Open the Modal
+      function openModal() {
+      document.getElementById('myModal').style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="lightbox/js/lightbox.min.js"></script>
+</body>
+</html>
