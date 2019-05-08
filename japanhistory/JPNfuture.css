@@ -63,7 +63,7 @@ ul.navbar {
 
 .row .column {
   padding: 30px 10px;
-  margin-top: 50px;
+  margin-top: px;
 }
 
 .row:after {
@@ -83,7 +83,7 @@ ul.navbar {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 10px;
   left: 0;
   top: 0;
   width: 100%;
@@ -98,7 +98,7 @@ ul.navbar {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding-top: 50%;
+  padding-top: 0%;
   width: 90%;
   max-width: 1200px;
 }
