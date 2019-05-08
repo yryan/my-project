@@ -3,25 +3,57 @@
 <head>
 <meta name="viewport" content="widthe=device-width, initial-scale=1">
   <title>Future of Japan</title>
-<link rel="stylesheet" type="text/css" href="JPNfuture.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
 <link rel="stylesheet" type="text/css" href="../css/styles.css">
+<link rel="stylesheet" type="text/css" href="JPNfuture.css">
 <style type="text/css">
 </style>
 </head>
 
-<body>
-<h1 style="text-align:center; text: 80px;">Future of Japan</h1>
+<body id="futurepage">
 
-<div class="container">
+<div class="container-fluid">
 
+    <div id="nav-menu" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="../img/logo.jpg"alt="Yoko's co."></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../Japan.html">About Japan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History of Japan</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#sight">Sight Seeing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="japanhistory/JPNfuture.html">Future</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div> 
+    
+  <h1>Future of Japan</h1>
+
+
+<!--
  <div id="nav" class="clear">
       <div class="logo">
         <a href="../index.html">
         <img src="../img/logo.jpg" alt="Yoko's logo">
       </div>
-
-      <!--<div class="logo"><img src="img/logo-company.png" alt="Web Development Logo"></div>-->
-      <div class="nav-list"><!--navigation-->
+      <div class="nav-list">
         <ul id= "navbarUL" class="navbar">
           <li><a href="../Japan.html">About Japan</a></li>
           <li><a href="history.html">History of Japan</a></li>
@@ -29,41 +61,44 @@
           <li><a href="../index.html#contact">Contact</a></li>
 
         </ul>
-      </div><!--end of navigation-->
+      </div>
     </div>
+-->
 
 <!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-   
-    <img src="img/tsunami2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"><p> Japan is a small country    and has been affected by frequent earthquakes and typhoons,  One of the largest earthquake and tsunami in 2011 killed  15,896 people insured 6,157 in North Eastern Japan.0</p>
-    </div>
-      <div class="column">
-    <img src="img/japansenior.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"><p>Japan is experiencing a super-aging society. People aged 65 and older in Japan make up a quarter of its total population, estimated to reach a third by 2050</p>
-  </div>
-  <div class="column">
-    <img src="img/modernJPN.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"><p>Japan is a peaceful country and will strive to contribute to the world peace.</p>
-  </div>
- 
+<div class="container">
 
+<div class="row">
+  <div class="col">
+    <img src="img/tsunami2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow img-fluid"><p> Japan is a small country    and has been affected by frequent earthquakes and typhoons,  One of the largest earthquake and tsunami in 2011 killed  15,896 people insured 6,157 in North Eastern Japan.0</p>
+  </div>
+  <div class="col">
+    <img src="img/aging.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow img-fluid"><p>Japan is experiencing a super-aging society. People aged 65 and older in Japan make up a quarter of its total population, estimated to reach a third by 2050</p>
+  </div>
+  <div class="col">
+    <img src="img/peaceS.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow img-fluid"><p>Japan will strive to advance modern technology and will contribute to World Peace.</p>
+  </div>
+ </div>
+
+</div>
 <!-- The Modal/Lightbox -->
--<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
       <div class="numbertext">1 / 3</div>
-      <img src="img/tsunami2.jpg" style="width:100%">
-    </div>
+        <img src="img/tsunami2.jpg" style="width:100%">
+      </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 3</div>
-      <img src="img/japansenior.jpg" style="width:100%">
+         <img src="img/agingL.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 3</div>
-      <img src="img/modernJPN.jpg" style="width:100%">
+      <img src="img/peaceL.jpg" style="width:100%">
     </div>
 
     </div>
@@ -78,17 +113,31 @@
 
     <!-- Thumbnail image controls -->
     <div class="column">
-      <img class="demo" src="img/tsunam2.jpg" onclick="currentSlide(1)" alt=" ">
+      <img class="demo" src="img/tsunami2.jpg" onclick="currentSlide(1)" alt=" ">
     </div>
 
     <div class="column">
-      <img class="demo" src="img/japansenior.jpg" onclick="currentSlide(2)" alt="">
+      <img class="demo" src="img/aging.jpg" onclick="currentSlide(2)" alt="">
     </div>
 
     <div class="column">
       <img class="demo" src="img/modernJPN.jpg" onclick="currentSlide(3)" alt="">
     </div>
 
+<footer id="footer" class="footer">
+  <!--<div id="contact" class="container">-->
+      <h2>Contact Us</h2>
+      <address>111 Harlem Blvd. NY, NY 10000</address>
+      <a href="mailto:someone@example.com?Subject=Web%20Development">someone@example.com</a><br>
+      <a href="tel:1-555-123-4567">+1-555-123-4567</a>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../lightbox/js/lightbox.js"></script>
    
 </div>
 
@@ -134,4 +183,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+</body>
+</html>
 

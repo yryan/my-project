@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="widthe=device-width, initial-scale=1">
   <title>History of Japan</title>
 <link rel="stylesheet" type="text/css" href="../css/history.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
 <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <body>
 
-<h1 style="text-align:center">History of Japan</h1>
-
-<div class="container">
-
-  <div id="nav" class="clear">
-      <div class="logo">
-        <a href="../index.html">
-        <img src="img/logo.jpg" alt="Yoko's logo">
-      </div>
-
-      <div class="nav-list"><!--navigation-->
-          <ul id= "navbarUL" class="navbar">
-            <li><a href="../Japan.html">About Japan</a></li>
+<div class="main-content container-fluid">
+        <!--
+          <li><a href="../Japan.html">About Japan</a></li>
             <li><a href="JPNfuture.html">Future of Japan</a></li>
             <li><a href="../index.html#sight">Sight Seeing</a></li>
-            <li><a href="../index.html#footer">Contact</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          -->
+    <div id="nav-menu" class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/logo.jpg"alt="Yoko's co."></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sight">Seightseeing</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="japanhistory/history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="japanhistory/JPNfuture.html">Future</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
           </ul>
-      </div><!--end of nav-list-->
-    </div><!---->
+        </div>
+      </nav>
+    </div>
+    
+    <h1 style="text-align:center">History of Japan</h1>
+
+    <!--end of banner word-->
+   
+    </div><!--end of banner container-->
+
+ <div id="bannerpost" class="bannerword"><!--outside banner pic wording-->
+      <p>Japan is a small country consisted with four main islands surrounded with sea. 
+        There are many interesting and beautiful places to see.</p>
+      </div><!--end of bannerpost-->
 
     <div class="mySlides">
       <div class="numbertext">1/6</div>
@@ -54,9 +85,10 @@
       <div class="numbertext">5/6</div>
       <img src="img/hiroshima1.jpg">
     </div>
-      <div class="mySlides">
+
+    <div class="mySlides">
       <div class="numbertext">6/6</div>
-      <img src="img/olympicrev.jpg">
+      <img src="img/olympic.jpg">
     </div>
     
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -68,7 +100,7 @@
 
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="img/shotoku.jpg" onclick="currentSlide(1)" alt="Ancient - 800 AD:  The Japan has traced to prehistoric times. Between 300 to 800, Japan's many kingdoms and tribes gradually came to be unified under a centralized government by the Emperors. In 794, a new imperial capital was established at Heian-kyo: present Kyoto.  Around 600, Prince Shotoku imported culture from China and established Buddhism and beginning of Japanese culture ."></a>
+        <img class="demo cursor" src="img/shotoku.jpg" onclick="currentSlide(1)" alt="Ancient - 800 AD:  The Japan has traced to prehistoric times. Between 300 to 800, Japan's many kingdoms and tribes gradually came to be unified under a centralized government by the Emperors. In 794, a new imperial capital was established at Heian-kyo: present Kyoto.  Around 600, Prince Shotoku imported culture from China and established Buddhism and beginning of Japanese culture .">
       </div>
 
       <div class="column">
@@ -87,25 +119,32 @@
       </div>
 
       <div class="column">
-        <img class="demo cursor" src="img/olympic.jpg" onclick="currentSlide(6)" alt="1945- present:  After the war, Japan abandoned their military power except own defense force.  Japan became one of the world economic powerhouses.  2020 Olympic Games will be held in Japan.">
+        <img class="demo cursor" src="img/olympic.jpg" onclick="currentSlide(6)" alt="1945- present:  After the war, Japan abandoned their military power except own defense force.  Japan became one of the world economic powerhouses.  2020 Olympic Games will be held in Japan. )">
       </div> 
     
     </div><!--end of "row"-->
   
 </div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="../lightbox/js/lightbox.min.js"></script>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../lightbox/js/lightbox.js"></script>
 
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");

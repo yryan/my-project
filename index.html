@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="widthe=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Introduction of Japan</title>
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="lightbox/css/lightbox.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	
 </head>
 <body id="home">
 	<!--
 	<a href="javascript:void(0);" onclick="window.history.back();">Go Back:Function</a>
 	-->
-	
-	<div class="main-content">
-		
-		<div id="nav" class="clear">
-			<div class="logo">
-				<a href="index.html">
-				<img src="img/logo.jpg" alt="Yoko's logo">
-			</div>
-
-			<!--<div class="logo"><img src="img/logo-company.png" alt="Web Development Logo"></div>-->
-			<div class="nav-list"><!--navigation-->
-				<ul id= "navbarUL" class="navbar">
-					<li><a href="Japan.html">About Japan</a></li>
-					<li><a href="japanhistory/history.html">History of Japan</a></li>
-					<li><a href="japanhistory/JPNfuture.html">Future of Japan</a></li>
-					<li><a href="#sight">Sight Seeing</a></li>
-					<li><a href="#contact">Contact</a></li>
-
-				</ul>
-			</div><!--end of navigation-->
+	<div class="main-content container-fluid">
+		<div id="nav-menu" class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="#"><img src="img/logo.jpg"alt="Yoko's co."></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#about">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#sight">Seightseeing</a>
+			      </li>
+			      
+			      <li class="nav-item">
+			        <a class="nav-link" href="japanhistory/history.html">History</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="japanhistory/JPNfuture.html">Future</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#footer">Contact</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
 		</div>
 
 		<div id="banner" class="banner container"><!--id banner-->
@@ -45,39 +58,24 @@
 			</div><!--end of bannerpost-->
 		</div><!--end of banner container-->
 
-			<div id="about" class="about-container">
-				
-					<h2>About Japan</h2>
+		<div id="about" class="container">
+			<h2>About Japan</h2>
+		  <div class="row">
+		    <div class="col-lg-4">
+		     <h3>Information on Japan</h3><br>
+		     <a href="Japan.html"><img src="img/Japan-mapcrop.jpg" class="img-fluid mx-auto d-block" alt="Japan-map"></a>
+		    </div>
 
-				<div class="about-content clear">
-					<div class="image-container">
-						<h3>Information on Japan</h3><br>
-						<a href="Japan.html"><img src="img/Japan-mapcrop.jpg" alt="Japan-map"></a>
-					</div>
+		    <div class="col-lg-4">
+		     <h3>History of Japan</h3><br>
+		     <a href="japanhistory/history.html"><img src="img/battlehistory.jpg" class="img-fluid mx-auto d-block" alt="Japan-map"></a>
+		    </div>
 
-					<div class="image-container">
-						<h3>History of Japan</h3><br>
-						<a href="japanhistory/history.html"><img src="img/battlehistory.jpg" alt="Japan-map"></a>
-					</div>
-				
-					<div class="image-container">
-						<h3>Future of Japan</h3><br>
-						<a href="japanhistory/JPNfuture.html"><img src="img/sunrise4.jpg" alt="Japan-map"></a>
-					</div>
-
-					<!--<div class="post-container">
-						<ul>
-						<li><a href="Japan.html">About Japan</a></li>
-						<li><a href="land.html">Japanese Geography</a></li>
-						<li><a href="history.html">Japanese History</a></li>
-						<li><a href="future.html">Modern Japan</a></li>
-						</ul>
-					</div>-->
-				</div>
-			</div>
-
-
-
+		    <div class="col-lg-4"><h3>Future of Japan</h3><br>
+			<a href="japanhistory/JPNfuture.html"><img src="img/sunrise4.jpg" class="img-fluid" alt="Japan-map"></a>
+		    </div>
+		  </div>
+		</div>
 
 		<div id="sight" class="sightimages clear">
 			<h2>Sight Seeing</h2>
@@ -123,21 +121,39 @@
 				</div>
 			</div> 
 		</div>
+	</div>
 
-		<div id="contact" class="container">
+	<div class="container"> 
+		<div class="row">
+		<div class="col-lg-6 col-md-12">
+		</div>
+	</div>
+	</div>
+	
+	<div class="container"> 
+		<div class="row">
+		</div>
+		<div class="col-lg-6 col-md-12">
+		</div>
+	</div>
+
+	
+<footer id="footer" class="footer">
+	<!--<div id="contact" class="container">-->
 			<h2>Contact Us</h2>
 			<address>111 Harlem Blvd. NY, NY 10000</address>
 			<a href="mailto:someone@example.com?Subject=Web%20Development">someone@example.com</a><br>
 			<a href="tel:1-555-123-4567">+1-555-123-4567</a>
 		</div>
-		
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-	</div>
-	
-<!--<footer class="footer">
-		<a href="table-2.html">Table 2</a> | <a href="float.html">Float</a> | <a href="embed.html">Embed</a>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="lightbox/js/lightbox.js"></script>
+
+		<!--<a href="table-2.html">Table 2</a> | <a href="float.html">Float</a> | <a href="embed.html">Embed</a>
 	</footer>-->
 	<!--<script type="text/javascript" src="js/main.js" ></script>	-->
 </body>

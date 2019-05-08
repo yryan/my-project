@@ -4,11 +4,17 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin-left: 25px;
+
     /*
     background-image: url("../img/cherry.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;*/
 }
+
+body #futurepage{
+      background-image:radial-gradient(black 50%), no-repeat, url("../japanhistoryimg/peace7opacity1.png");
+      }
+
 h1, h2, h3 { 
 	margin: 0;
 	padding: 0;
@@ -77,7 +83,7 @@ address {
 #nav {
 	display: block;
 	position: relative;
-	margin-bottom: 40px; 
+	margin-bottom: 0px; 
 	color: #373a3c;
 }
 #nav .logo { 
@@ -115,7 +121,7 @@ ul.navbar {
  	background-color: #009ddc;
  	background-size: cover;
  	background-repeat: no-repeat;
- 	padding: 5%;
+ 	padding: 10%;
 }
 .bannerwrapper {
 	padding: 5%;
@@ -305,3 +311,38 @@ transition: color 12s, font-size 12s;
 		/*transition: font 5s ease;*/
 	}
 }
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 576px) { 
+ 	
+ 	.container, .container-fluid {
+	/*background-color: red;
+	}*/
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	.container, .container-fluid {
+	/*background-color: yellow;
+	}*/
+
+}
+/*
+// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+ 		.container, .container-fluid {
+		/*background-color: green;
+	}*/
+ }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	.container, .container-fluid {
+	/*	background-color: orange;
+	}*/
+ 
+ }
